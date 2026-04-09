@@ -86,14 +86,70 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
-
+#skip{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+#skip:focus{
+  position: static;
+  width: auto;
+  height: auto;
+}
 /* ///ADD/// Navigation Styles */
 
 /* ///ADD/// Global Layout Styles */
+body{
+  max-width: 500px;
+  margin: 0 auto;
+}
 
 /* ///ADD/// Global Text Styles */
+h2{
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+h3{
+  font-family: var(--font-heading);
+}
+p{
+  font-family:var(--font-body);
+}
+/*************** HEADER ********************/
+header {
+  max-width: 100%;
+  height: auto;
+  background-color: var(--blue-bulletin);
+}
+header h1{
+  color: var(--watchdog-white);
+  font-family: var(--font-heading);
+  padding: 10px;
+  font-size: 2.2rem;
+}
+header p{
+  color: var(--watchdog-white);
+  padding: 10px;
+  line-height: 1.3em;
+}
 
-
+/*************** WELCOME ********************/
+.welcome{
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+.welcome p{
+  padding: 16px;
+  line-height: 1.3em;
+}
+.welcome .tagline{
+  text-align: center;
+  font-weight: bold;
+}
 /* ///ADD/// medium styles 620px */
 
 
