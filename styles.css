@@ -275,6 +275,32 @@ form input{
   font-size: 1rem;
 }
 /*************** FOOTER ********************/
+footer{
+  background-color: var(--blue-bulletin);
+  padding-top: 30px;
+}
+footer h2{
+  color: var(--watchdog-white);
+}
+footer p{
+  color: var(--watchdog-white);
+  text-align: center;
+  padding-bottom: 10px;
+}
+#social{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+#social a{
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 5px;
+  background-color: var(--news-flash);
+  text-decoration: none;
+  border-radius: 2px;
+  color: var(--watchdog-white);
+}
+
 
 
 /* ///ADD/// medium styles 620px */
