@@ -136,8 +136,6 @@ body.dark-mode {
   text-align: center;
 }
 
-
-
 /* ///ADD/// Global Layout Styles */
 body{
   max-width: 500px;
@@ -229,6 +227,55 @@ video{
   padding: 20px;
   border: 1px solid var(--truth-text);
 }
+/*************** Alerts/ Form ********************/
+#alerts p{
+  line-height: 1.3em;
+  padding: 10px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--news-flash);
+  padding: 20px;
+  padding-top: 10px;
+  width: 85%;
+  margin: 20px auto;
+}
+form label{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  color: var(--watchdog-white);
+}
+form input{
+  padding: 10px;
+}
+.notification-box{
+  border: 1px solid var(--truth-text);
+  padding: 16px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.notification-box legend {
+  font-weight: bold;
+  color: var(--watchdog-white);
+  padding: 0 5px;
+}
+.notification-box input[type="checkbox"]{
+  accent-color: var(--blue-bulletin);
+  width: 18px; 
+  height: 18px;
+}
+.subscribe { 
+  padding: 12px 24px;
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  font-size: 1rem;
+}
+/*************** FOOTER ********************/
+
 
 /* ///ADD/// medium styles 620px */
 
