@@ -100,6 +100,43 @@ body.dark-mode {
   height: auto;
 }
 /* ///ADD/// Navigation Styles */
+.mobile-nav{
+  position: relative;
+  padding: 15px;
+  font-family: var(--font-body);
+}
+.menu-button{
+  display: block;
+  color: var(--watchdog-white);
+  background-color: var(--news-flash);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+}
+#menu-toggle{
+  display: none;
+}
+.menu{
+  display: none;
+  background-color: var(--news-flash);
+  margin-top: 7px;
+}
+#menu-toggle:checked + .menu-button + .menu {
+  display: block;
+}
+.menu li{
+  padding: 10px;
+  border-bottom: 2.5px solid var(--blue-bulletin);
+}
+.menu a{
+  text-decoration: none;
+  color: var(--watchdog-white);
+  display: block;
+  text-align: center;
+}
+
+
 
 /* ///ADD/// Global Layout Styles */
 body{
