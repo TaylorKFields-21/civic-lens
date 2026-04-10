@@ -114,6 +114,11 @@ body.dark-mode {
   padding: 10px;
   margin: 0 auto;
 }
+.menu-button:hover {
+  background-color: var(--blue-bulletin);
+  border: 1px solid var(--news-flash);
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
 #menu-toggle{
   display: none;
 }
@@ -121,6 +126,11 @@ body.dark-mode {
   display: none;
   background-color: var(--news-flash);
   margin-top: 7px;
+}
+.menu li:hover {
+  background-color: var(--blue-bulletin);
+  border: 1px solid var(--news-flash);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 #menu-toggle:checked + .menu-button + .menu {
   display: block;
@@ -202,6 +212,8 @@ header p{
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.549);
 }
 #video-container h3{
   font-size: 1.2rem;
@@ -214,7 +226,10 @@ video{
   max-width: 420px;
   height:auto;
 }
-
+.video:hover {
+  transform: scale(1.05);         
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
 /*************** ARTICLES ********************/
 .articles{
   max-width: 95%;
@@ -226,6 +241,11 @@ video{
   flex-direction: column;
   padding: 20px;
   border: 1px solid var(--truth-text);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;   
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.549); 
+}
+#featured-articles section:hover {
+  transform: scale(1.05);   
 }
 /*************** Alerts/ Form ********************/
 #alerts p{
@@ -240,6 +260,7 @@ form{
   padding-top: 10px;
   width: 85%;
   margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.549);
 }
 form label{
   display: flex;
@@ -273,6 +294,13 @@ form input{
   background-color: var(--blue-bulletin);
   color: var(--watchdog-white);
   font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.549);
+}
+.subscribe:hover {
+  transform: scale(1.05); 
+  background-color: var(--watchdog-white);
+  color: var(--truth-text);
 }
 /*************** FOOTER ********************/
 footer{
@@ -299,6 +327,11 @@ footer p{
   text-decoration: none;
   border-radius: 2px;
   color: var(--watchdog-white);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.549);
+}
+#social a:hover {
+  transform: scale(1.05);
 }
 
 
