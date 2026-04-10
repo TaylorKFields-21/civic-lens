@@ -272,7 +272,11 @@ form label{
   color: var(--watchdog-white);
 }
 form input{
-  padding: 10px;
+  padding: 13px;
+}
+.inputs input{
+  width: 100%;
+  box-sizing: border-box;
 }
 .notification-box{
   border: 1px solid var(--truth-text);
@@ -358,7 +362,7 @@ footer p{
     height: auto;
     padding: 10px;
   }
-  
+
   .video p{
    font-size: 13px;
   }
@@ -369,9 +373,55 @@ footer p{
    align-items: center;
   }
   /*************** articles ********************/
+  .articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;   
+    max-width: 1000px;
+  }
+   .articles section{
+    height: 100px;
+   }
 
+  /*************** Form ********************/ 
 
+form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  align-items: center;
 }
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputs input{
+ margin: 0;
+}
+.notification-box{  
+  grid-column: 1 / -1;        
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.notification-box label{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.subscribe{
+  grid-column: 1 / -1;          
+  justify-self: center;
+  width: 100%;
+}
+}
+
 
 /* ///ADD/// large styles 920px */
 
