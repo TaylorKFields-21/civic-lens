@@ -159,7 +159,7 @@ hr{
 h2{
   font-family: var(--font-heading);
   font-size: 1.5rem;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 h3{
   font-family: var(--font-heading);
@@ -176,12 +176,13 @@ header {
 header h1{
   color: var(--watchdog-white);
   font-family: var(--font-heading);
-  padding: 10px;
+  padding: 20px;
   font-size: 2.3rem;
 }
 header p{
   color: var(--watchdog-white);
-  padding: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
   line-height: 1.3em;
 }
 
@@ -193,6 +194,7 @@ header p{
 .welcome p{
   padding: 16px;
   line-height: 1.3em;
+  padding-left: 20px;
 }
 .welcome .tagline{
   text-align: center;
@@ -215,9 +217,7 @@ header p{
   transition: transform 0.3s ease, box-shadow 0.3s ease; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.549);
 }
-#video-container h3{
-  font-size: 1.2rem;
-}
+
 #video-container h3, #video-container p{
   color: var(--watchdog-white);
   line-height: 1.3em;
@@ -251,6 +251,7 @@ video{
 #alerts p{
   line-height: 1.3em;
   padding: 10px;
+  padding-left: 20px;
 }
 form{
   display: flex;
@@ -334,10 +335,43 @@ footer p{
   transform: scale(1.05);
 }
 
-
-
 /* ///ADD/// medium styles 620px */
+@media (min-width: 620px){
+ 
+  /*************** Global ********************/
+  body{
+    max-width: 620px;
+  }
+  header{
+    width: 100%;
+  }
 
+  /*************** Video ********************/
+  #video-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;   
+    max-width: 1000px;   
+  } 
+  video{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .video p{
+   font-size: 13px;
+  }
+  .video h3{
+   line-height: 1.2;
+   min-height: 2.4em;
+   display: flex;
+   align-items: center;
+  }
+  /*************** articles ********************/
+
+
+}
 
 /* ///ADD/// large styles 920px */
 
