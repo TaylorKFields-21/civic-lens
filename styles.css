@@ -145,7 +145,7 @@ body.dark-mode {
 
 /* ///ADD/// Global Layout Styles */
 body {
-  max-width: 500px;
+  max-width: 100%;
   margin: 0 auto;
   transition: all 0.3s ease;
 }
@@ -342,7 +342,7 @@ footer p{
  
   /*************** Global ********************/
   body {
-    max-width: 620px;
+    max-width: 100%;
   }
   header{
     width: 100%;
@@ -442,7 +442,7 @@ form{
 
 /*************** Global ********************/
 body {
-   max-width: 920px;
+   max-width: 100%;
 }
 header{
   width: 100%;
@@ -483,7 +483,7 @@ header{
 /* ///ADD/// x-large styles 1024px */
 @media (min-width: 1024px){
   body{
-    max-width: 1024px;
+    max-width: 100%;
   }
   header{
     width: 100%;
