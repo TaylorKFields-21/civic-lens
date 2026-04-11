@@ -349,7 +349,24 @@ footer p{
   header{
     width: 100%;
   }
+ /*************** NAV ********************/
+  .menu-button {
+    display: none; 
+  }
 
+  .menu {
+    display: flex;
+    flex-direction: row;
+    background: none;
+    margin-top: 0;
+    gap: 10px;
+  }
+  .menu li {
+    border: none;
+    background-color: var(--news-flash);
+    border-radius: 5px;
+  }
+ 
   /*************** Video ********************/
   #video-container{
     display: grid;
@@ -421,7 +438,6 @@ form{
   width: 100%;
 }
 }
-
 
 /* ///ADD/// large styles 920px */
 
