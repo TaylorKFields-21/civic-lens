@@ -132,9 +132,6 @@ body.dark-mode {
   border: 1px solid var(--news-flash);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-#menu-toggle:checked + .menu-button + .menu {
-  display: block;
-}
 .menu li{
   padding: 10px;
   border-bottom: 2.5px solid var(--blue-bulletin);
@@ -150,6 +147,7 @@ body.dark-mode {
 body{
   max-width: 500px;
   margin: 0 auto;
+  transition: all 0.3s ease;
 }
 hr{
   width: 100%;
@@ -343,7 +341,7 @@ footer p{
 @media (min-width: 620px){
  
   /*************** Global ********************/
-  body{
+  body {
     max-width: 620px;
   }
   header{
@@ -399,7 +397,7 @@ footer p{
   }
    .articles section{
     height: 100px;
-   }
+  }
 
   /*************** Form ********************/ 
 
@@ -440,15 +438,70 @@ form{
 }
 
 /* ///ADD/// large styles 920px */
+@media (min-width: 920px){
 
+/*************** Global ********************/
+body {
+   max-width: 920px;
+}
+header{
+  width: 100%;
+}
+/*************** Video ********************/
+#video-container{
+   max-width: 900px;
+   margin: 0 auto;
+   gap: 20px;
+} 
+/*************** articles ********************/
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    width: 100%;   
+    max-width: 1000px;
+}
+.articles section{
+    height: 100px;
+}
+#featured-articles{
+   max-width: 900px;
+   margin: 0 auto;
+}
+#featured-articles h2{
+  padding-top: 20px;
+}
+
+/*************** Form ********************/ 
+.notification-box{  
+  grid-column: 1 / -1;        
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
 
 /* ///ADD/// x-large styles 1024px */
-
+@media (min-width: 1024px){
+  body{
+    max-width: 1024px;
+  }
+  header{
+    width: 100%;
+  }
+}
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
-
+body.dark-mode #featured-articles section {
+   border: 1px solid var(--story-subtitle);
+}
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
 
+  body:has(#menu-toggle:checked) .menu {
+    display: block;
+  }
+  body:has(#menu-toggle:checked) .menu-button {
+    background-color: var(--blue-bulletin);
+  }
 }
